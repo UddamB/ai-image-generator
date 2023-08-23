@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Changing background color to dark theme */
+  background: #0f1b21;
+  /* Changing text color to white */
+  color: white;
 }
 
 code {

@@ -9,6 +9,12 @@ export const ImageGenerator = () => {
         <div className="img-loading">
           <div className="image"><img src={default_image} alt="" /></div> {/* Displaying image on homepage*/}
         </div>
+        <div className="search-box">
+          {/* Displaying text box */}
+          <input type="text" className='search-input' placeholder='Describe what you want to see...'/>
+          {/* Displaying button */}
+          <div className="generate-btn">Generate</div>
+        </div>
     </div>
   )
 }

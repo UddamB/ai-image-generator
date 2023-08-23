@@ -34,7 +34,8 @@ export const ImageGenerator = () => {
         }
       );
       let data = await response.json(); //Initializing data as response data using json() 
-      console.log(data);
+      let data_array = data.data;
+      setImage_url(data_array[0].url) //setting image url to image url from api
     }
 
   return (

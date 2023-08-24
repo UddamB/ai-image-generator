@@ -46,6 +46,18 @@ export const ImageGenerator = () => {
     <div className='ai-image-generator'>
       {/* Displaying text on homepage */}
       <div className="header">AI Image <span>Generator</span></div> 
+      <div class="subheader">
+      <h1>Turn imagination into art.</h1>
+      </div>
+      <div class="subtext">
+      {/* Displaying subtext on homepage */}
+      <p>Created using the OpenAI API, our AI image generator brings imagination <br></br> to life, producing stunning art, illustrations, and images in seconds.
+      <br></br>Unleash creativity and express yourself in new ways with the power of AI.</p>
+      </div>
+      <div class="name">
+      <p>Made by <span>Uddam</span> Bhathal</p>
+      </div>
+      <a href="https://www.linkedin.com/in/uddam-bhathal/" class="name"></a>
       <div className="img-loading">
         {/* Displaying image on homepage */}
         <div className="image"><img src={image_url==="/"?default_image:image_url} alt="" /></div> 
@@ -54,6 +66,10 @@ export const ImageGenerator = () => {
             <div className={loading?"loading-bar-full":"loading-bar"}></div>
             <div className={loading?"loading-text":"display-none"}>Loading....</div>
         </div>
+      </div>
+      {/* Displaying second subtext on homepage */}
+      <div className="secondsubtext">
+        <p>Simply enter a few words, and watch AI transform text into incredible art.</p>
       </div>
       <div className="search-box">
         {/* Displaying text box */}

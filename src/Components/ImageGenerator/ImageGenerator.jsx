@@ -1,13 +1,15 @@
 import React, { useRef, useState } from 'react'
 import './ImageGenerator.css' // Importing css file 
 import default_image from '../Assets/aiart.jpg' // Importing image from assets folder 
-
-
+import {REACT_APP_API_KEY} from './creds.jsx'
 export const ImageGenerator = () => {
 
     // Initializing user state to update image on homepage 
     const [image_url, setImage_url] = useState("/");
-    let inputRef = useRef(null);  
+    let inputRef = useRef(null);
+
+    // Initializing user state to update loading bar and loading text
+    const [loading, setLoading] = useState(false);  
 
     // Executing function when the 'Generate' button is clicked 
     const imageGenerator = async () =>{
@@ -15,6 +17,7 @@ export const ImageGenerator = () => {
         return 0; // If no text is inputted in text field, we return 0 
       }
 
+      setLoading(true); //Display loading bar
       // Executing function to fetch data from api
       const response = await fetch(
         "https://api.openai.com/v1/images/generations", //OpenAI api link
@@ -23,7 +26,7 @@ export const ImageGenerator = () => {
           headers:{
             "Content-Type":"application/json",
             Authorization:
-            "Bearer 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", //api key
+            REACT_APP_API_KEY, //api key
             "User-Agent":"Chrome",
           },
           body:JSON.stringify({
@@ -36,22 +39,28 @@ export const ImageGenerator = () => {
       let data = await response.json(); //Initializing data as response data using json() 
       let data_array = data.data;
       setImage_url(data_array[0].url) //setting image url to image url from api
+      setLoading(false); //Hide loading bar
     }
 
   return (
     <div className='ai-image-generator'>
-        {/* Displaying text on homepage*/}
-        <div className="header">AI image <span>generator</span></div> 
-        <div className="img-loading">
-          {/* Displaying image on homepage*/}
-          <div className="image"><img src={image_url==="/"?default_image:image_url} alt="" /></div> 
+      {/* Displaying text on homepage */}
+      <div className="header">AI image <span>generator</span></div> 
+      <div className="img-loading">
+        {/* Displaying image on homepage */}
+        <div className="image"><img src={image_url==="/"?default_image:image_url} alt="" /></div> 
+        <div className="loading">
+            {/* Displaying loading bar on homepage */}
+            <div className={loading?"loading-bar-full":"loading-bar"}></div>
+            <div className={loading?"loading-text":"display-none"}>Loading....</div>
         </div>
-        <div className="search-box">
-          {/* Displaying text box */}
-          <input type="text" ref={inputRef} className='search-input' placeholder='Describe what you want to see...'/>
-          {/* When button is clicked, imageGenerator() is executed*/}
-          <div className="generate-btn" onClick={()=>{imageGenerator()}}>Generate</div> 
-        </div>
-    </div>
+      </div>
+      <div className="search-box">
+        {/* Displaying text box */}
+        <input type="text" ref={inputRef} className='search-input' placeholder='Describe what you want to see...'/>
+        {/* When button is clicked, imageGenerator() is executed */}
+        <div className="generate-btn" onClick={()=>{imageGenerator()}}>Generate</div> 
+      </div>
+  </div>
   )
 }

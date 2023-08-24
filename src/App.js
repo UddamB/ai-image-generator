@@ -7,6 +7,6 @@ function App() {
       <ImageGenerator/> {/* Displaying ImageGenerator.jsx file on homepage */}
     </div>
   );
+  
 }
-
 export default App;

@@ -73,3 +73,28 @@
     background: #DE1B89;
     cursor: pointer;
 }
+
+/* Displaying loading bar with color */
+.loading-bar{
+    width: 0px;
+    height: 8px;
+    background: #DE1B89;
+}
+
+/* Changing text size of loading text */
+.loading-text{
+    font-size: 18px;
+}
+
+/* Formatting loading bar when it's full */
+.loading-bar-full{
+    width: 512px;
+    height: 8px;
+    background: #DE1B89;
+    transition: 15s;   
+}
+
+/* Hiding loading bar */
+.display-none{
+    display: none;
+}

@@ -6,7 +6,7 @@
 ## Description
 Turn imagination into art. The AI image generator brings imagination to life, producing stunning art, illustrations, and images in seconds. Unleash creativity and express yourself in new ways with the power of AI. Simply enter a few words, and watch AI transform text into incredible art.
 
-Uses the OpenAI API to generate an image based on user prompts; fetches data from the api and changes the default image url to a new image url provided. 
+Uses the OpenAI API to generate an image based on user prompts; fetches data from the API and changes the default image url to a new image url provided. 
 
 (P.S. I've always wondered how AI creates such fascinating images...)
 ## Tech Stack

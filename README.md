@@ -1,7 +1,8 @@
 
 # AI Image Generator
-![monkay](https://github.com/UddamB/ai-image-generator/assets/89602764/5ab1c925-8583-4465-b9fa-c4a4b04e469b)
 
+
+![aigen](https://github.com/UddamB/ai-image-generator/assets/89602764/0ca4d5a4-1ae2-490c-9c06-f31e8c285f49)
 
 
 ## Description

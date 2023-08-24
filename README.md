@@ -24,9 +24,7 @@ Uses the OpenAI API to generate an image based on user prompts; fetches data fro
 - Creates images in seconds!
 
 ## Demo
-![AI Image Generator - Google Chrome 2023-08-24 01-25-05 (online-video-cutter com) (1)](https://github.com/UddamB/ai-image-generator/assets/89602764/66016d83-5203-48f1-bee7-e3792d244046)
-
-
+https://github.com/UddamB/ai-image-generator/assets/89602764/be90ec5c-9f06-4de7-817d-2556623bd57a
 
 ## API Reference
 

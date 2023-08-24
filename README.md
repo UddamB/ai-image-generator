@@ -23,8 +23,11 @@ Uses the OpenAI API to generate an image based on user prompts; fetches data fro
 - Infinite prompts and images
 - Creates images in seconds!
 
-
 ## Demo
+![AI Image Generator - Google Chrome 2023-08-24 01-25-05 (online-video-cutter com) (1)](https://github.com/UddamB/ai-image-generator/assets/89602764/66016d83-5203-48f1-bee7-e3792d244046)
+
+
+
 ## API Reference
 
 The [OpenAI API](https://platform.openai.com/docs/guides/images) is used for referencing the API key which is stored in the environment variable `REACT_APP_API_KEY`. 

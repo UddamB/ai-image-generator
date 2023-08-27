@@ -131,3 +131,25 @@
 .name p span{
     color: #DE1B89;
 }
+
+/*Adding space above social media icons*/
+.social-icons{
+    margin-top: -50px;
+    margin-bottom: -20px;
+}
+
+/*Formatting social media icons with color and size*/
+.social-icons a{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+/*Adding hover animation to social media icons*/
+.social-icons a:hover{
+    color: #DE1B89;
+    transform: translateY(5px);
+}

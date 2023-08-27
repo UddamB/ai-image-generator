@@ -54,6 +54,11 @@ export const ImageGenerator = () => {
       <p>Created using the OpenAI API, our AI image generator brings imagination <br></br> to life, producing stunning art, illustrations, and images in seconds.
       <br></br>Unleash creativity and express yourself in new ways with the power of AI.</p>
       </div>
+      {/* <!-- External link for GitHub --> */}
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+      <div class="social-icons">
+        <a href="https://github.com/UddamB/ai-image-generator"><i class="fa fa-github"></i></a> 
+      </div>
       <div class="name">
       <p>Made by <span>Uddam</span> Bhathal</p>
       </div>

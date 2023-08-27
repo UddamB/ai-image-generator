@@ -26,7 +26,7 @@ export const ImageGenerator = () => {
           headers:{
             "Content-Type":"application/json",
             Authorization:
-            process.env.REACT_APP_API_KEY, //api key
+            `${process.env.REACT_APP_API_KEY}`, //api key
             "User-Agent":"Chrome",
           },
           body:JSON.stringify({

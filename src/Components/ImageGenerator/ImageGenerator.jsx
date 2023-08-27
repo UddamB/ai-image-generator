@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './ImageGenerator.css' // Importing css file 
 import default_image from '../Assets/aiart.jpg' // Importing image from assets folder 
-import {REACT_APP_API_KEY} from './creds.jsx'
+//import {REACT_APP_API_KEY} from './creds.jsx'
 export const ImageGenerator = () => {
 
     // Initializing user state to update image on homepage 

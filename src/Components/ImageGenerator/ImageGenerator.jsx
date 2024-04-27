@@ -30,6 +30,7 @@ export const ImageGenerator = () => {
             "User-Agent":"Chrome",
           },
           body:JSON.stringify({
+            model: "dall-e-3",
             prompt:`${inputRef.current.value}`, //Provides text written in input field
             n:1, //1 image needed
             size:"512x512",

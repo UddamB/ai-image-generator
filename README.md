@@ -1,7 +1,7 @@
 
 # AI Image Generator
 
-![aigen](https://github.com/UddamB/ai-image-generator/assets/89602764/0ca4d5a4-1ae2-490c-9c06-f31e8c285f49)
+![monki](https://github.com/UddamB/ai-image-generator/assets/89602764/12daeb48-2b4e-4741-af0b-daec49c4e875)
 
 ## Description
 Turn imagination into art. The AI image generator brings imagination to life, producing stunning art, illustrations, and images in seconds. Unleash creativity and express yourself in new ways with the power of AI. Simply enter a few words, and watch AI transform text into incredible art.

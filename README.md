@@ -21,8 +21,6 @@ Uses the OpenAI API to generate an image based on user prompts; fetches data fro
 - Infinite prompts and images
 - Creates images in seconds!
 
-![monki](https://github.com/UddamB/ai-image-generator/assets/89602764/12daeb48-2b4e-4741-af0b-daec49c4e875)
-
 ## Demo
 https://github.com/UddamB/ai-image-generator/assets/89602764/be90ec5c-9f06-4de7-817d-2556623bd57a
 
